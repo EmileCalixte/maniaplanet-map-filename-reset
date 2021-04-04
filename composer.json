@@ -1,0 +1,19 @@
+{
+    "name": "emilecalixte/maniaplanet-map-filename-reset",
+    "description": "A utility tool to rename all map files in a directory based on the real name of the map",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emile Calixte",
+            "email": "calixte.emile@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"App\\": "src/"}
+    },
+    "require": {
+        "PHP": "^7.4 || ^8.0",
+        "manialib/gbx": "^4.1"
+    }
+}
