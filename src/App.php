@@ -45,15 +45,6 @@ class App
         Util::println("Changed $changedFilenameCount filenames");
     }
 
-    function stripAll(?string $styled = '', bool $keepLinks = false): string
-    {
-        if ($keepLinks) {
-            return preg_replace('/(?<![$])\${1}(?:[iwngosz<>]{1}|[\w\d]{1,3})/i', '', $styled);
-        }
-
-        return preg_replace('/(?<![$])\${1}(([lh])(?:\[.+?])|[iwngosz<>]{1}|[\w\d]{1,3})/i', '', $styled);
-    }
-
     /**
      * Function inspired by the EvoSC stripAll function {@link https://github.com/EvoTM/EvoSC}
      *
